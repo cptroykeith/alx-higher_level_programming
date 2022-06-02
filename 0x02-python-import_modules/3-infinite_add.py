@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-import hidden_4
+import sys
 
 if __name__ == "__main__":
-    for name in dir(hidden_4):
-        if name[0] != '_':
-            print("{}".format(name))
+    result = 0
+    for i in range(1, len(sys.argv)):
+        result += int(sys.argv[i])
+    print("{}".format(result))
