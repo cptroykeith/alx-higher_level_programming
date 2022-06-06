@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 #include <stdlib.h>
 #include <stddef.h>
 #include "lists.h"
