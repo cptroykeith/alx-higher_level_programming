@@ -9,5 +9,5 @@ def best_score(a_dictionary):
                 topkey = key
                 maxval = a_dictionary[key]
             i += 1
-            return topkey
-        return None
+        return topkey
+    return None
