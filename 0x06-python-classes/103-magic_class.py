@@ -1,25 +1,21 @@
-#!/usr/bin/python3
 
-""" Task 10 of 'Project 0x06. Python - Classes and Objects """
-
-from math import pi
+"""Defines a class MagicClass"""
+import math
 
 
 class MagicClass:
-    """ Magic class """
+    """This represents a circle"""
     def __init__(self, radius=0):
-        """ Constructor for magic class
-        Args:
-            radius: radius of a circle
-        """
+        """Initializes the Magic Class"""
+        self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
-            raise TypeError("radius must be a number")
+            raise TypeError('radius must be a number')
         self.__radius = radius
 
     def area(self):
-        """ area of a circle """
-        return (self.__radius ** 2 * math.pi)
+        """Calculaes the area of the circle"""
+        return (self.__radius ** 2) * math.pi
 
     def circumference(self):
-        """ circumference of a circle """
+        """Calculates the circumference of the circle"""
         return 2 * math.pi * self.__radius
