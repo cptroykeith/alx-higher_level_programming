@@ -165,4 +165,4 @@ Advanced Tasks
               length: 10
               value: スプーンは存在しない
             [.] string object info
-              [ERROR] Invalid String Object
+              [ERROR] Invalid String Object.
