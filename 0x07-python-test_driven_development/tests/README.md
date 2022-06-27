@@ -1,70 +1,8 @@
-# 0-add_integer.txt
+Doctest files
 
-==========================================================================
-doctest to test 0-add_integer.py
-==========================================================================
-
-Two arguments (both numbers)
-==========================================================================
-
-        >>> add = __import__('0-add_integer').add_integer
-        >>> add(2, 3)
-        5
-        >>> add(4, -5)
-        -1
-        >>> add(-6.2, 4)
-        -2
-        >>> add(-5, 0)
-        -5
-
-One argument (number)
-==========================================================================
-
-        >>> add(12)
-        110
-        >>> add(5.5)
-        103
-        >>> add(0)
-        98
-
-
-Non-number types as arguments
-==========================================================================
-
-        >>> add('c', 'd')
-        Traceback (most recent call last):
-                ...
-        TypeError: a must be an integer
-        >>> add('c')
-        Traceback (most recent call last):
-                ...
-        TypeError: a must be an integer
-        >>> add(4, 'b')
-        Traceback (most recent call last):
-                ...
-        TypeError: b must be an integer
-        >>> add((1, 2, 3))
-        Traceback (most recent call last):
-                ...
-        TypeError: a must be an integer
-
-Overflows and special values in float
-==========================================================================
-
-        >>> add(float('nan'))
-        Traceback (most recent call last):
-                ...
-        ValueError: cannot convert float NaN to integer
-        >>> add(float('inf'))
-        Traceback (most recent call last):
-                ...
-        OverflowError: cannot convert float infinity to integer
-
-No argument
-==========================================================================
-         
-        >>> add()
-        Traceback (most recent call last):
-                ...
-        TypeError: add_integer() missing 1 required positional argument: 'a'
-
+All your files should end with a new line
+All your test files should be inside a folder tests
+All your test files should be text files (extension: .txt)
+All your tests should be executed by using this command: python3 -m doctest ./tests/*
+All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
+All your functions should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)')
